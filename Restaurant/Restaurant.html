@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap D-1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        h1
+        {
+            background-color: lightblue;
+            color: brown;
+            text-align: center;
+            border-radius: 20px;
+        }
+        footer
+        {
+            width: 100%;
+            background-color: lightgray;
+            color: rgb(49, 47, 47);
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-top: 10px;
+        
+        }
+    </style>
+  </head>
+  <body>
+    <marquee scrollamount="10" direction="right" loop="10"><h1>Bawarchi Restaurant</h1></marquee>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bawarchi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Address</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+      <div id="carouselExample" class="carousel slide" id="home">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Bawarchi.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./bawarchi2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Bawarchi.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <br>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             <h2> Veg-Iteams</h2>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <table class="table">
+             
+                <tr>
+                  <th >Iteams</th>
+                  <th >Image</th>
+                  <th >Price</th>
+                </tr>
+      
+                <tr>
+                  <td>Panner Tikka</td>
+                  <td><img src="./PaneerTikka.jpeg" width="150px" height="80px"></td>
+                  <td>150Rs/-</td>
+                </tr>
+                <tr>
+                  
+                  <td>Panner Biriyani</td>
+                  <td><img src="./PaneerBiriyani.jpeg" width="150px" height="80px"></td>
+                  <td>200Rs/-</td>
+                </tr>
+                <tr>
+                 
+                  <td>Mushroom Biriyani</td>
+                  <td><img src="./Mushroom Biriyani.jpeg"  width="150px" height="80px"></td>
+                  <td>250Rs/-</td>
+                </tr>
+             
+            </table>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h2>Non-Veg Iteams</h2>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <table class="table">
+             
+              <tr>
+                <th >Iteams</th>
+                <th >Image</th>
+                <th >Price</th>
+              </tr>
+    
+              <tr>
+                <td>Grill Chicken</td>
+                <td><img src="./GrillChicken.jpeg" width="150px" height="80px"></td>
+                <td>250Rs/-</td>
+              </tr>
+              <tr>
+                
+                <td>Chicken Biriyani</td>
+                <td><img src="./ChickenBiriyani.jpeg" width="150px" height="80px"></td>
+                <td>300Rs/-</td>
+              </tr>
+              <tr>
+               
+                <td>Mutton Biriyani</td>
+                <td><img src="./MuttonBiriyani.jpeg"  width="150px" height="80px"></td>
+                <td>450Rs/-</td>
+              </tr>
+           
+          </table>
+           
+          </div>
+        </div>
+        
+
+       <center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60896.098649247775!2d78.32445964863282!3d17.459419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9145ec9f395b%3A0x27bb4d3e866ade7b!2sBrother%E2%80%99s%20Bawarchi%20Restaurant!5e0!3m2!1sen!2sin!4v1714893545142!5m2!1sen!2sin" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </center>
+       
+
+       <footer>
+        Find me on social media.
+        <br>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-snapchat"></i>
+        <br>
+       <h5>Powerd by PSP</h5>
+    </footer> 
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
